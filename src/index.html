@@ -1,12 +1,102 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack custom config</title>
-</head>
-<body>
-    <h1>Webpack custom config</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />   
+    <title>Rain Alert</title>
+  <script defer src="main.bundle.js"></script></head>
+  <body>
+    <!-- ////////////////////////////////////////////////WELCOM SCREEN///////////////////////////////////////////////// -->
+    <section id="welcome">
+        <a href="#prevision">
+          <div class="logo">
+            <section class="wrap">
+              <div class="text-logo">
+                <img src="./img/logo_RainAlert.png" alt="" class="logo" />
+              </div>
+              <div class="text-logo">
+                <h1 class="title">Rain Alert</h1>
+                <p class="text-w-p">Préparez-vous pour la pluie</p>
+              </div>
+            </section>
+          </div>
+        </a>
+      </section>
+
+      
+      <section id="prevision" class="out">
+        <header>
+          <p class="head-img"><img src="./img/logo_RainAlert.png" alt="" /></p>
+          <p class="head-txt">RainAlert</p>
+        </header>
+        <main>
+          <section class="search">
+            <form action="" method="">
+              <input type="search" placeholder="Verviers" />
+              <button>Search</button>
+            </form>
+          </section>
+          <div class="t">
+            <p class="t-img">
+              <img src="./img/cloud.png" alt="" />
+            </p>
+            <p class="temp">20°C</p>
+            <p class="cloud">Il ne pleut pas pour le moment</p>
+          </div>
+        </main>
+        <footer>
+          <img src="./img/pluie.png" alt="" />
+          <a href="#prevision">Prévisions</a>
+          <img src="./img/lieu.png" alt="" />
+          <a href="#carte">Carte</a>
+        </footer>
+      </section>
+      <section id="carte" class="out">
+        <header>
+          <p class="head-img"><img src="./img/logo_RainAlert.png" alt="" /></p>
+          <p class="head-txt">RainAlert</p>
+        </header>
+        <main></main>
+        <footer>
+          <img src="./img/pluie.png" alt="" />
+          <a href="#prevision">Prévisions</a>
+          <img src="./img/lieu.png" alt="" />
+          <a href="#carte">Carte</a>
+        </footer>
+      </section>
+<!-- ////////////////////////////////////////////////CARTE/////////////////////////////////////////////////////////////// -->
+<section class="trois" id="Carte">
+ 
+  <div class="carte">
+    <div class="Logo">
+        <img src="./assets/images/logo_RainAlert.png" alt="" class="logo" />
+    </div>
+    <div class="maps">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22058579.466690544!2d1.0412015700815294!3d47.554212254033025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEurope!5e0!3m2!1sfr!2sbe!4v1669985468319!5m2!1sfr!2sbe"
+      width="300"
+      height="300"
+      style="border: 1;"
+      allowfullscreen=""
+      loading="lazy"
+      
+    ></iframe>
+  </div>
+  </div>
+</section>
+
+  </body>
+  <footer>
+
+    <div class="rectanglebas">
+      <div class="lanav">
+        <nav class="nav-main">
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
 </html>
+
